@@ -6,4 +6,5 @@ spring:
       config:
          server:
             git:
-               uri: file://d:/Dev/projects/spring-boot/spring-cloud-config-repo
+               uri: https://github.com/alaszcz/spring-cloud-config-repo
+#               uri: file://d:/Dev/projects/spring-boot/spring-cloud-config-repo
