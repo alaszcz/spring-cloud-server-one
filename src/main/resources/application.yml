@@ -8,3 +8,15 @@ spring:
             git:
                uri: https://github.com/alaszcz/spring-cloud-config-repo
 #               uri: file://d:/Dev/projects/spring-boot/spring-cloud-config-repo
+
+security:
+   user:
+      password: guessme
+
+encrypt:
+   keyStore:
+      location: classpath:/server.jks
+      password: letmein
+      alias: mytestkey
+      secret: changeme
+# keytool -genkeypair -alias mytestkey -keyalg RSA -dname "CN=adam,O=adamorg,C=NO" -keypass changeme -keystore server.jks -storepass letmein
